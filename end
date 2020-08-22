@@ -1,0 +1,93 @@
+[33mcommit 45e96e726f65001e9ea004c9b8ca403c268ed695[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: AndriyIvaniukh <andriyivaniukh@gmail.com>
+Date:   Sat Aug 22 20:23:34 2020 +0300
+
+    update
+
+[33mcommit 0c3d5454908ab3702c226b6633e764d3d6afc189[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: AndriyIvaniukh <andriyivaniukh@gmail.com>
+Date:   Fri Aug 21 16:32:19 2020 +0300
+
+    update readme
+
+[33mcommit 25cf5ccb53fd0070addca21a6ecd83298cf42d48[m
+Author: ovk <myEmail@example.com>
+Date:   Fri Aug 21 10:38:11 2020 +0300
+
+    small update
+
+[33mcommit da6551e0091fabb8dd59f27ced4676e71bb4f2f4[m
+Author: Olena Kovalska <Olena.Kovalska@atrg.com>
+Date:   Fri Aug 21 10:35:26 2020 +0300
+
+    greetings phrase
+
+[33mcommit 59ada88eac248c95b2d729d86e71aafb9f745fe6[m
+Author: bebebe <hahaha@gmail.com>
+Date:   Thu Aug 20 20:02:28 2020 +0300
+
+    add 222
+
+[33mcommit 45a98dc3f21018d536a8d31dd9f3289885f7b596[m
+Merge: 18e46be 8f6aeda
+Author: bebebe <hahaha@gmail.com>
+Date:   Thu Aug 20 19:56:13 2020 +0300
+
+    manual merge
+
+[33mcommit 18e46be80d6ff646f188b6de29333b2443877a4f[m
+Author: bebebe <hahaha@gmail.com>
+Date:   Thu Aug 20 19:49:26 2020 +0300
+
+    add 555 666
+
+[33mcommit 8f6aeda10f7cb4c97311855267a5a6af3c28edd8[m
+Author: bebebe <hahaha@gmail.com>
+Date:   Thu Aug 20 19:48:32 2020 +0300
+
+    add 444 BBB
+
+[33mcommit dacdee83b6aae276a8888825b00c7cda99f014df[m
+Merge: 6bb3fb5 1befcbe
+Author: bebebe <hahaha12@gmail.com>
+Date:   Thu Aug 20 19:42:23 2020 +0300
+
+    Merge branch 'master' of https://github.com/softservedata/lv526
+
+[33mcommit 1befcbe5d3a1508e1ca63ac5161ad7249719ebf9[m
+Author: MaxKl <57271864+MusknotMax@users.noreply.github.com>
+Date:   Thu Aug 20 19:42:00 2020 +0300
+
+    Update readme.txt
+    
+    10
+
+[33mcommit 6bb3fb578fb207083d87ceda17833cdee72b3fbc[m
+Author: bebebe <hahaha12@gmail.com>
+Date:   Thu Aug 20 19:40:14 2020 +0300
+
+    add 111
+
+[33mcommit cedf58a1336e2a5dd6d9065dd5712a29c48383f9[m
+Author: bebebe <hahaha1@gmail.com>
+Date:   Thu Aug 20 19:37:45 2020 +0300
+
+    add 999
+
+[33mcommit 27d306a18f53b57b4925e1f14d8bd3439d3b4648[m
+Author: bebebe <hahaha@gmail.com>
+Date:   Thu Aug 20 19:34:56 2020 +0300
+
+    add readme
+
+[33mcommit 4b777efd659c0a9eaf1117f38a0a176eb6cfc547[m
+Author: bebebe <hahaha@gmail.com>
+Date:   Thu Aug 20 19:20:18 2020 +0300
+
+    update .gitconfig
+
+[33mcommit c8226073ce93f287f06bd0951f18c8ec43807f97[m
+Author: softservedata <softservedata@users.noreply.github.com>
+Date:   Thu Aug 20 18:51:35 2020 +0300
+
+    Initial commit
