@@ -21,3 +21,4 @@ Small update.
 +++
 
 Hello from Nazariy) Wish all of you good week
+Hello, Delete b.txt
