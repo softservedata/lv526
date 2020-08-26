@@ -10,13 +10,13 @@ public class Define_integer_variables {
 		fromUser = new Scanner (System.in);
 		int a, b;
 		
-		System.out.println("¬вед≥ть число а");
+		System.out.println("Enter value а");
 		a = fromUser.nextInt();
 		
-		System.out.println("¬вед≥ть число b");
+		System.out.println("Enter value b");
 		b = fromUser.nextInt();
 		
-		System.out.println("–езультати:");
+		System.out.println("Results:");
 		System.out.println(a + b);
 		System.out.println(a - b);
 		System.out.println(a * b);
