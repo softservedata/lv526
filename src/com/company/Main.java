@@ -67,8 +67,8 @@ public class Main {
                 p2 = c2 * t2,
                 p3 = c3 * t3;
 
-        System.out.println("Singly: " + (float)Math.round(p1) + ", " + (float)Math.round(p2) + ", " + (float)Math.round(p3));
-        System.out.println("Together: " + (p1 + p2 + p3));
+        System.out.println("Singly (rounded): " + (int)Math.round(p1) + ", " + (int)Math.round(p2) + ", " + (int)Math.round(p3));
+        System.out.println("Together: " + String.format("%.2f", p1 + p2 + p3));
     }
 
     public static void main(String[] args) {
