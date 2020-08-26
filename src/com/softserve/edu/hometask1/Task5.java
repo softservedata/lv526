@@ -1,4 +1,4 @@
-package com.softserve.javacore.hometask1;
+package com.softserve.edu.hometask1;
 
 import java.util.Scanner;
 
