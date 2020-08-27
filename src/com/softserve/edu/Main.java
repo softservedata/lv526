@@ -52,7 +52,7 @@ public class Main {
           /* Phone calls from three different countries are c1,c2,c3
           standard units per minute. Talks continued t1,t2 and t3 minutes.
           How much computer will count each call separately and all together?
-          Input all source data from console, make calculations and output to the screen
+          Input all source data from console, make calculations and output to the screen !!!
          */
 
     }
