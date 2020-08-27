@@ -55,5 +55,39 @@ public class Main {
           Input all source data from console, make calculations and output to the screen !!!
          */
 
+          System.out.println("Input how many calls per minute ");
+        System.out.print("C1 :=");
+       int c1 = sc.nextInt();
+        System.out.print("C2 :=");
+       int c2 = sc.nextInt();
+        System.out.print("C3 :=");
+       int c3 = sc.nextInt();
+        int f1,f2,f3;
+        int countF1 = 0;
+        int countF2 = 0;
+        int countF3 = 0;
+        for (int i = 0; i <c1 ; i++) {
+            System.out.println("Input time of call number "+ i +" from country c1" );
+            f1 = sc.nextInt();
+            countF1+=f1;
+        }
+
+        for (int i = 0; i <c2 ; i++) {
+            System.out.println("Input time of call number "+ i +" from country c2" );
+            f2 = sc.nextInt();
+            countF2+=f2;
+        }
+
+        for (int i = 0; i <c3 ; i++) {
+            System.out.println("Input time of call number "+ i +" from country c3" );
+             f3 = sc.nextInt();
+            countF3+=f3;
+        }
+        int together = countF1+countF2+countF3;
+        System.out.println("Time of calls from c1 = " + countF1);
+        System.out.println("Time of calls from c2 = " + countF2);
+        System.out.println("Time of calls from c3 = " + countF3);
+        System.out.println("Total time from all c = " + together);
+
     }
 }
