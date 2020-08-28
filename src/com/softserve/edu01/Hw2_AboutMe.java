@@ -23,6 +23,5 @@ public class Hw2_AboutMe {
         System.out.println("Nice to meet you "+ name+ " from "+ addres+")");
 
 
-
     }
 }
