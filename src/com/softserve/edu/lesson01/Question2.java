@@ -1,4 +1,4 @@
-package com.softserve.edu.lesson01.question2;
+package com.softserve.edu.lesson01;
 
 import java.util.Scanner;
 

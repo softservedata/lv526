@@ -1,4 +1,4 @@
-package com.softserve.edu.lesson01.flower;
+package com.softserve.edu.lesson01;
 
 import java.util.Scanner;
 
