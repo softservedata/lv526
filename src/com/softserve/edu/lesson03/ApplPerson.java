@@ -18,7 +18,7 @@ public class ApplPerson {
 			firstName = sc.next();
 			lastName = sc.next();
 			birthYear = sc.nextInt();
-			p[i].input(firstName, lastName, birthYear);;
+			p[i].input(firstName, lastName, birthYear);
 		}
 		//output
 		for(int i=0; i<5; i++) {
