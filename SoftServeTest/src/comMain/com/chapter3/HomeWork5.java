@@ -1,6 +1,4 @@
-package com;
-
-import org.w3c.dom.ls.LSOutput;
+package com.chapter3;
 
 import java.io.BufferedReader;
 import java.io.IOException;

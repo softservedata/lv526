@@ -1,6 +1,5 @@
-package com;
+package com.chapter3;
 
-import javax.print.attribute.IntegerSyntax;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
