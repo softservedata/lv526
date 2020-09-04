@@ -14,6 +14,8 @@ public class HomeWorkExampleStudent {
     }
 
     public HomeWorkExampleStudent() {
+        name = "";
+        rating = 0;
         count++;
     }
 

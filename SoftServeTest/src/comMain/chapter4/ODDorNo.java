@@ -3,27 +3,22 @@ package chapter4;
 import java.util.Scanner;
 
 public class ODDorNo {
-    static int[] array = new int[3];
+    private int[] array = new int[3];
 
     public static void main(String[] args) {
-
+        ODDorNo odDorNo = new ODDorNo();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter first number");
-        int a = scanner.nextInt();
+        odDorNo.array[0] = scanner.nextInt();
         System.out.println("Enter first number");
-        int b = scanner.nextInt();
+        odDorNo.array[1] = scanner.nextInt();
         System.out.println("Enter first number");
-        int c = scanner.nextInt();
-        array[0] = a;
-        array[1] = b;
-        array[2] = c;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % 2 == 0) {
-                System.out.println("Парне");
+        odDorNo.array[2] = scanner.nextInt();
 
-            }else {
-                System.out.println("Не парне");
-            }
+        for (int i = 0; i < odDorNo.array.length; i++) {
+            String g = odDorNo.array[i] % 2 == 0 ? "Парне" : "Не парне";
+            System.out.println(g);
+
 
         }
     }

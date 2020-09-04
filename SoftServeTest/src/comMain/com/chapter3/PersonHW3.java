@@ -73,7 +73,7 @@ public class PersonHW3 {
         person1.changeName();
         person1.output();
         System.out.println(person1.getAge());
-    }
+}
 
 
 }
