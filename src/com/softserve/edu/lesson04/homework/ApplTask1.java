@@ -10,6 +10,7 @@ public class ApplTask1 {
 		System.out.print("Entre 3 double numbers");
 		for (int i = 0; i < a.length; i++) {
 			a[i] = sc.nextDouble();
+			sc.nextLine();
 		}
 		for (int i = 0; i < a.length; i++) {
 			if ((a[i] <= 5) && (a[i] >= -5)) {
@@ -24,6 +25,7 @@ public class ApplTask1 {
 		int min;
 		for (int i = 0; i < d.length; i++) {
 			d[i] = sc.nextInt();
+			sc.nextLine();
 		}
 		max = d[0];
 		min = d[0];
@@ -38,9 +40,15 @@ public class ApplTask1 {
 		}
 		System.out.println("Biggest number = " + max);
 		System.out.println("Less number = " + min);
+		//
 
+		//
 		int num;
 		System.out.print("Number of HTTP Error = ");
 		num = sc.nextInt();
+		String error = "ERROR" + num;
+		//
+		HttpError httpError = HttpError.ERROR999;
+		System.out.print("Error " + num + " - " + httpError.valueOf(error).getMassege());
 	}
 }
