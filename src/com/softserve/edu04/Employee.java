@@ -6,39 +6,35 @@ public class Employee {
 	private int rate;
 	private int hours;
 	
-	private static int totalSum;
+	static int totalSum;
 
 	public static void main(String[] args) {
 		
-		Employee employee1 = new Employee();
-		employee1.setName("Ostap");
-		employee1.setRate(100);
-		employee1.setHours(20);
-		Employee employee2 = new Employee("Kateryna", 500);
-		employee2.setHours(10);
+		Employee employee1 = new Employee("Ostap", 100, 20);
+		Employee employee2 = new Employee("Kateryna", 500, 10);
 		Employee employee3 = new Employee("Halyna", 350, 30);
-		
-		totalSum = employee1.getSalary()+employee2.getSalary()+employee3.getSalary();
 		
 		System.out.println(totalSum);
 		
 	}	
 	public Employee() {
-		this.name = "Olga";
-		this.rate = 800;
-		this.hours = 50;
-		
+		name = null;
+		rate = 0;
+		hours = 0;
+		totalSum = totalSum + getSalary();
 	};
 	
 	public Employee (String name, int rate) {
 		this.name = name;
 		this.rate = rate;
+		totalSum = totalSum + getSalary();
 	}
 	
 	public Employee (String name, int rate, int hours) {
 		this.name = name;
 		this.rate = rate;
 		this.hours = hours;
+		totalSum = totalSum + getSalary();
 	}
 	
 	
@@ -60,12 +56,6 @@ public class Employee {
 	}
 	public void setHours(int hours) {
 		this.hours = hours;
-	}
-	public static int getTotalSum() {
-		return totalSum;
-	}
-	public static void setTotalSum(int totalSum) {
-		Employee.totalSum = totalSum;
 	}
 	
 	
