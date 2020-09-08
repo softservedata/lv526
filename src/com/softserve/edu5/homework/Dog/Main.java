@@ -5,7 +5,7 @@ public class Main {
         Dog dog1 = new Dog("Akki", Breed.AKITA, 5);
         Dog dog2 = new Dog("Tuzik", Breed.TERRIER, 7);
         Dog dog3 = new Dog("Yuzik", Breed.SPANIEL, 3);
-        dog1.compare(dog2, dog3);
+        dog1.compareOnNotSame(dog2, dog3);
         dog1.oldestDog(dog2, dog3);
     }
 }

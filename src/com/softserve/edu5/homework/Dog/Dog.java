@@ -65,23 +65,28 @@ public class Dog {
         }
     }
 
-    public void compare(Object o, Object o1) {
+    public boolean compareOnNotSame(Object o, Object o1) {
         if (!o.equals(o1) || !this.equals(o) || !this.equals(o1)) {
-            System.out.println("No same objects");
-        }
+            System.out.println("\t\tNo same objects");
+            return true;
+        }else{
+            System.out.println("\t\tThey are same");
+        }return  false ;
 
     }
 
-    public void oldestDog(Object o1, Object o2) {
+    public Object oldestDog(Object o1, Object o2) {
         Dog other1 = (Dog)o1;
         Dog other2 = (Dog)o2;
         if (this.age > other1.age && this.age > other2.age) {
             System.out.println(this.toString());
+            return this.toString();
         } else if (other1.age > this.age && other1.age > other2.age) {
             System.out.println(other1.toString());
-        } else if (other2.age > this.age && other2.age > other1.age) {
+            return other1.toString();
+        } else if (other2.age > this.age && other2.age > other1.age)
             System.out.println(other2.toString());
-        }
+            return other2.toString();
 
     }
 
