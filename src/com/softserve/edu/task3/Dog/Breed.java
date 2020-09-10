@@ -5,16 +5,16 @@ public enum Breed {
     BULLDOG,
     TERRIER,
     HOUND,
-    BASENJI;
+    BASIN;
 }
 
 
 class Dog {
     private String name;
-    private String breed;
+    private Breed breed;
     private int age;
 
-    public Dog(String name, String breed, int age) {
+    public Dog(String name, Breed breed, int age) {
         this.name = name;
         this.breed = breed;
         this.age = age;
@@ -28,44 +28,50 @@ class Dog {
         return age;
     }
 
-
     @Override
     public String toString() {
-        return "Dog {" +
-                "name ='" + name + '\'' +
-                ", breed ='" + breed + '\'' +
-                ", age = " + age +
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", breed=" + breed +
+                ", age=" + age +
                 '}';
     }
 
-    public static void main(String[] args) {
-        Dog[] dogs = {
-                new Dog("Miki", "TERRIER", 4),
-                new Dog("John", "HOUND", 7),
-                new Dog("Bob", "BASENJI", 3),
-                new Dog("John", "AKITA", 1),
-                new Dog("Bred", "BULLDOG", 5),
-        };
-
-        boolean huh = false;
-        for (int i = 0; i < dogs.length; i++) {
-            for (int j = 0; j < dogs.length; j++) {
-                if (j != i && dogs[j].getName() == dogs[i].getName()) {
-                    huh = true;
-                    System.out.println("Dogs with the same nam: " + huh + " - " + dogs[j].toString());
+    public static boolean getDuplicateName(Dog[] dogs) {
+        boolean result = false;
+        for (int i = 0; (i < dogs.length - 1) && !result; i++) {
+            for (int j = i + 1; (j < dogs.length) && !result; j++) {
+                if (dogs[i].getName().equalsIgnoreCase(dogs[j].getName())) {
+                    result = true;
+                    System.out.println("Dogs with the same name:\n" + dogs[i] + "\n" + dogs[j]);
                 }
             }
         }
-        //System.out.println(huh);
+return result;
+    }
 
+    public static Dog getOldest(Dog[] dogs) {
         Dog max = dogs[0];
-
-        for (int i = 0; i < dogs.length; i++) {
-            if (dogs[i].getAge() > max.getAge()) {
-                max = dogs[i];
+        for (Dog currentDog : dogs) {
+            if (currentDog.getAge() > max.getAge()) {
+                max = currentDog;
             }
         }
-        System.out.println("Oldest dog: " + max.toString());
+        return max;
+    }
+
+
+    public static void main(String[] args) {
+        Dog[] dogs = {
+                new Dog("Miki", Breed.TERRIER, 4),
+                new Dog("John", Breed.HOUND, 7),
+                new Dog("Bob", Breed.BASIN, 3),
+                new Dog("John", Breed.AKITA, 1),
+                new Dog("Bred", Breed.BULLDOG, 5),
+        };
+
+        System.out.println("Duplicate is: " + Dog.getDuplicateName(dogs));
+        System.out.println("Oldest dog: " + Dog.getOldest(dogs));
     }
 }
 
