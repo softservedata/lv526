@@ -1,4 +1,4 @@
-package com.chapter3;
+package chapter3;
 
 public class EmployeeFromHW3 {
     private String name;

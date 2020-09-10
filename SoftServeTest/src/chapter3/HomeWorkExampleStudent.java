@@ -1,4 +1,4 @@
-package com.chapter3;
+package chapter3;
 
 public class HomeWorkExampleStudent {
     private String name;
