@@ -18,7 +18,7 @@ public class Hw1_Circle {
         System.out.println("What is radius of the circle? ");
 
         System.out.print("Radius = ");
-        float r = sc.nextInt();
+        int r = sc.nextInt();
 
         float per = (float) (2*Math.PI*r);
         System.out.println("Perimeter = "+per);
