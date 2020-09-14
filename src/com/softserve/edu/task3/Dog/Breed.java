@@ -32,7 +32,7 @@ class Dog {
     public String toString() {
         return "Dog{" +
                 "name='" + name + '\'' +
-                ", breed=" + breed +
+                ", breed=" + breed.name().toLowerCase() +
                 ", age=" + age +
                 '}';
     }
