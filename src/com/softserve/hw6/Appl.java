@@ -14,7 +14,7 @@ public class Appl {
 		SumOrPr k= new SumOrPr();
 		k.input();
 		k.SorP();
-		*/
+		
 		//
 		Task3 k = new Task3();
 	//	k.input();
@@ -22,5 +22,6 @@ public class Appl {
 	//	k.Min();
 		
 		k.first();
+		*/
 	}
 }
