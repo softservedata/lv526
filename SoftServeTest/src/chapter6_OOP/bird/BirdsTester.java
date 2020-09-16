@@ -12,8 +12,6 @@ public class BirdsTester {
 
         for (Bird bird : birdArray){
             bird.fly();
-            bird.isFeathers();
-            bird.isLayEgg();
             System.out.println(bird);
             System.out.println("----------");
 
