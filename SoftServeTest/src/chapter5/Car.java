@@ -2,7 +2,6 @@ package chapter5;
 
 import javax.sound.midi.Soundbank;
 import java.io.CharArrayReader;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Car {
