@@ -1,16 +1,12 @@
 package com.softserve.edu.task5.Birds;
 
 public class Swallow extends FlyingBird{
-    boolean feathers;
-    boolean layEggs;
 
     public Swallow() {
-        this.feathers = true;
-        this.layEggs = true;
+        super(true, true);
     }
 
-    public boolean fly(){
-        System.out.println("Swallow: feathers " + feathers + " Lay eggs " + layEggs + " FlyingBird " + true);
-        return true;
+    public void fly(){
+        System.out.println("Swallow: feathers " + this.feathers + " Lay eggs " + this.layEggs + " FlyingBird " + this.flyind);
     }
 }

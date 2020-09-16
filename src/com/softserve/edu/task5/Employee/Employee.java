@@ -1,9 +1,18 @@
 package com.softserve.edu.task5.Employee;
 
-public class Employee {
-    private int Employeld;
+interface EmployeeCalc {
 
-interface calcPay{
-    void calculatePay();
+    public abstract double calculatePay();
 }
+
+public abstract class Employee implements EmployeeCalc {
+    private int employeeld;
+
+    public int getEmployeeld() {
+        return employeeld;
+    }
+
+    public Employee(int employeeld) {
+        this.employeeld = employeeld;
+    }
 }

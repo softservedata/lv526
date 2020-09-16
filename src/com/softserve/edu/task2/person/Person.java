@@ -10,7 +10,7 @@ public class Person {
 
     Scanner sc = new Scanner(System.in);
 
-    public Person(){
+    public Person() {
 
     }
 
@@ -19,15 +19,15 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public int getAge(){
+    public int getAge() {
 
-        Date d=new Date();
-        int year=d.getYear();
-        int currentYear=year+1900;
+        Date d = new Date();
+        int year = d.getYear();
+        int currentYear = year + 1900;
         return currentYear - birthYear;
     }
 
-    public void input(){
+    public void input() {
         System.out.println("Input first name ");
         this.firstName = sc.nextLine();
         System.out.println("Input last name ");
@@ -36,7 +36,7 @@ public class Person {
         this.birthYear = sc.nextInt();
     }
 
-    public void output(){
+    public void output() {
         System.out.println(this.toString());
     }
 
@@ -45,40 +45,35 @@ public class Person {
         return "Person [" +
                 "FirstName = '" + firstName + '\'' +
                 ", LastName = '" + lastName + '\'' +
+                ", BirthYear = '" + birthYear + '\'' +
                 ", Age = " + this.getAge() +
                 ']';
     }
 
-    public void changeName(String fn, String ln){
+    public void changeName(String fn, String ln) {
         firstName = fn;
         lastName = ln;
     }
-
 }
 
 class Main {
 
     public static void main(String[] args) {
-        Person person1 = new Person();
-        Person person2 = new Person();
-        Person person3 = new Person();
-        Person person4 = new Person();
-        Person person5 = new Person();
 
-        person1.input();
-        person2.input();
-        person3.input();
-        person4.input();
-        person5.input();
+        Person[] persons = {
+                new Person(),
+                new Person(),
+                new Person(),
+                new Person(),
+                new Person()
+        };
 
-        person3.changeName("Ahmed", "Ivanov");
-        person4.changeName("Joel", "Eleven");
-        person5.changeName("Joli", "Bro");
-
-        person1.output();
-        person2.output();
-        person3.output();
-        person4.output();
-        person5.output();
+        for (int i = 0; i < persons.length; i++) {
+            persons[i].input();
+            persons[2].changeName("Ahmed", "Ivanov");
+            persons[3].changeName("Joel", "Eleven");
+            persons[4].changeName("Joli", "Bro");
+            persons[i].output();
+        }
     }
 }

@@ -1,16 +1,12 @@
 package com.softserve.edu.task5.Birds;
 
 public class Penguin extends NonFlyingBird{
-    boolean feathers;
-    boolean layEggs;
 
     public Penguin() {
-        this.feathers = false;
-        this.layEggs = true;
+        super(false, true);
     }
 
-    public boolean fly(){
-        System.out.println("Penguin: feathers " + feathers + " Lay eggs " + layEggs + " FlyingBird " + false);
-        return false;
+    public void fly(){
+        System.out.println("Penguin: feathers " + this.feathers + " Lay eggs " + this.layEggs + " FlyingBird " + this.flyind);
     }
 }

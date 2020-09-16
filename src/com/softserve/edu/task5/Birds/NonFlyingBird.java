@@ -1,11 +1,14 @@
 package com.softserve.edu.task5.Birds;
 
 public class NonFlyingBird extends Bird {
-    boolean feathers;
-    boolean layEggs;
+    protected boolean flyind;
 
-    public boolean fly() {
-        System.out.println("I am a " + fly());
-        return false;
+    public NonFlyingBird(boolean feathers, boolean layEggs) {
+        super(feathers, layEggs);
+        this.flyind = false;
+    }
+
+    public void fly() {
+
     }
 }
