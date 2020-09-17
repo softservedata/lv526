@@ -86,6 +86,8 @@ public class ApplSort {
             System.out.println(current);
         }
         //
+        /*-
+        // Invalid Approach
         System.out.println("\tDelete Element contains 'Second'");
         //int n = list.size();
         for (int i = 0; i < list.size(); i++) {
@@ -93,6 +95,25 @@ public class ApplSort {
             System.out.println(list.get(i));
             if (list.get(i).contains("Second")) {
                 list.remove(i); // Architecture Error
+            }
+        }
+        //
+        System.out.println("\nDeleting ...");
+        for (String current : list) {
+            System.out.println(current);
+            if (current.contains("Second")) {
+                list.remove(current);
+            }
+        }
+        */
+        //
+        System.out.println("\nDeleting ...");
+        Iterator<String> iterat = list.iterator();
+        while(iterat.hasNext()) {
+            String current = iterat.next();
+            System.out.println(current);
+            if (current.contains("Second")) {
+                iterat.remove();
             }
         }
         //
