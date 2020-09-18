@@ -19,10 +19,13 @@ public class Dog {
 	
 	public Dog(String name, String breed, int age) {
 			this.name = name;
+			try {
 			this.breed = Breed.valueOf(breed.toUpperCase());
+			} catch (Exception e) {
+				System.out.println("Breed wasn't saved. Available values for this field: terrier, bulldog, dulmatian");
+			}
 			this.age = age;
 		}
-
 
 	public String getName() {
 		return name;
@@ -40,7 +43,11 @@ public class Dog {
 
 
 	public void setBreed(String breed) {
-		this.breed = Breed.valueOf(breed.toUpperCase());
+		try {
+			this.breed = Breed.valueOf(breed.toUpperCase());
+			} catch (Exception e) {
+				System.out.println("Breed wasn't saved. Available values for this field: terrier, bulldog, dulmatian");
+			}
 	}
 
 

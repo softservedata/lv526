@@ -15,13 +15,15 @@ public class MinMax {
 	}
 	
 	public void input() {
-		System.out.print("Enter integer number1  = ");
 		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter integer number1  = ");
+		
 		num1 = scan.nextInt();
 		System.out.print("Enter integer number2  = ");
 		num2 = scan.nextInt();
 		System.out.print("Enter integer number3  = ");
 		num3 = scan.nextInt();
+	
 	}
 	
 	public void min() {
