@@ -1,5 +1,5 @@
 package chapter6_OOP.bird;
-
+ 
 public class BirdsTester {
     public static void main(String[] args) {
         Bird swallow1 = new Swallow();
