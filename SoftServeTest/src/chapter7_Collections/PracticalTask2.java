@@ -14,22 +14,21 @@ public class PracticalTask2 {
         } else {
             System.out.println("This id is not valid");
         }
-
     }
-
-    public static <T, E> Set<T> getKeysByValue(Map<T, E> map, E value) {
+    public static <T, E extends Comparable<E>> Set<T> getKeysByValue(Map<T, E> map, E value) {
         Set<T> keys = new HashSet<T>();
         for (Map.Entry<T, E> entry : map.entrySet()) {
-            if (Objects.equals(value, entry.getValue())) {
+            //   if (Objects.equals(value, entry.getValue())) { also can be
+            //    if (value.equals(entry.getValue())) { // it can be
+            if (value.compareTo(entry.getValue()) == 0) {
                 keys.add(entry.getKey());
-            } else {
-                // System.out.println(" Invalid name"); (Incorect)
             }
+        }
+        if (keys.size() == 0) {
+            System.out.println(" Invalid name");
         }
         return keys;
     }
-
-
     public static void main(String[] args) {
         Map<Integer, String> employeeMap = new HashMap<>();
         employeeMap.put(5, "Ivan");
