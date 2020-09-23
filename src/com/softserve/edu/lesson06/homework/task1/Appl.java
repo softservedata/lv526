@@ -34,9 +34,9 @@ public class Appl {
 			} else
 				System.out.println("without feathers");
 			if (bird[i].isLayEggs()) {
-				System.out.println("Lay eggs");
+				System.out.println("Lay eggs\n");
 			} else
-				System.out.println("dont lay eggs");
+				System.out.println("dont lay eggs\n");
 		}
 
 	}

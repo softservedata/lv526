@@ -12,9 +12,4 @@ public class Student extends Person {
 	public void print() {
 		System.out.println("I'm a Student");
 	}
-
-	@Override
-	public void salary() {
-		System.out.println("null");
-	}
 }

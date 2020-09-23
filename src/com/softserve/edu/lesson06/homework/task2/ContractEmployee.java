@@ -3,16 +3,7 @@ package com.softserve.edu.lesson06.homework.task2;
 public class ContractEmployee extends Employee {
 
 	private String federalTaxIdmember;
-	private int hour;
-
-	public int getHour() {
-		return hour;
-	}
-
-	@Override
-	public void setHour(int hour) {
-		this.hour = hour;
-	}
+	private int salary;
 
 	public String getFederalTaxIdmember() {
 		return federalTaxIdmember;
@@ -23,10 +14,19 @@ public class ContractEmployee extends Employee {
 	}
 
 	@Override
-	public int calculatePay(int salary) {
+	public int calculatePay(int perHour) {
 		System.out.println("ContractEmployee calcpay");
-		super.setSalary(salary * hour);
-		return salary * hour;
+		this.salary = 8 * perHour;
+		return salary;
 
+	}
+
+	@Override
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
 	}
 }

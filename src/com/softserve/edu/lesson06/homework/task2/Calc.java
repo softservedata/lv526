@@ -4,6 +4,5 @@ public interface Calc {
 
 	public int calculatePay(int salary);
 
-	void setHour(int hour);
-
+	public int getSalary();
 }

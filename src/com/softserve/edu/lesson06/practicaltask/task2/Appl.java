@@ -1,6 +1,13 @@
 package com.softserve.edu.lesson06.practicaltask.task2;
 
 public class Appl {
+
+	private static void sal(Person person) {
+		if (person instanceof Staff) {
+			((Staff) person).salary();
+		}
+	}
+
 	public static void main(String[] args) {
 		Person[] person = new Person[6];
 		person[0] = new Teacher();
@@ -10,12 +17,9 @@ public class Appl {
 		person[4] = new Cleaner();
 		person[5] = new Student();
 
-		for (int i = 0; i < person.length; i++) {
-			person[i].print();
-			String type = person[i].getTYPE_PERSON();
-			if ((type.equals("Teacher")) || (type.equals("Cleaner"))) {
-				person[i].salary();
-			}
+		for (Person pers : person) {
+			pers.print();
+			sal(pers);
 			System.out.println("\n");
 		}
 	}

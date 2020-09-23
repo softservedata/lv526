@@ -5,16 +5,4 @@ public abstract class Person {
 
 	public abstract void print();
 
-	public abstract String getTYPE_PERSON();
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public abstract void salary();
-
 }
