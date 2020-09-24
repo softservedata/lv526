@@ -2,21 +2,25 @@ package chapter7_Collections.homework2;
 
 import chapter7_Collections.homework3FROMCollections.Student;
 
+import java.io.IOException;
 import java.util.*;
 
-public class PersonStarter {
+public class PersonStarter{
+    public PersonStarter() {
+    }
+
     private static void namechecker(Map<String, String> ourmap) {
-        //  boolean status = false;
+        // boolean status = false;
         Map<String, String> personMap1 = new HashMap(ourmap);
         Set valueset = new HashSet(personMap1.values());
         if (personMap1.values().size() != valueset.size()) {
-            //    status = true;
+            //       status = true;
             System.out.println("Our collection has dublicated values");
         } else {
             System.out.println("Our collection has not dublicated values");
-            //   status = false;
+            //    status = false;
         }
-        //  return status;
+        //   return status;
     }
 
 
