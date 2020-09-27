@@ -3,8 +3,6 @@ package chapter8;
 import java.util.Scanner;
 
 public class HomeWork1 {
-
-
     private static void scaner() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter sentense ");
