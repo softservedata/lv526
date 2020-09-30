@@ -4,17 +4,22 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.SQLOutput;
+
 
 public class Appl extends JFrame {
+
     private static final long serialVersion = 1L;
     //
     private JLabel tLabel = new JLabel("Time : ");
     private JTextField tOutput = new JTextField("", 15);
-    private JButton buttonTime = new JButton(" Vlad huy ");
-    private JButton buttonExit = new JButton(" Vlad exit  ");
+    private JButton buttonTime = new JButton(" Start ");
+    private JButton buttonExit = new JButton(" Exit  ");
     private JPanel centralPanel = new JPanel(new GridLayout(2, 2, 5, 5));
 
+
+    public void settOutput(String textOutput) {
+        tOutput.setText(textOutput);
+    }
 
     public Appl() {
         super("Nazariy Clock");
@@ -29,12 +34,15 @@ public class Appl extends JFrame {
         //
         buttonTime.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                long ms = System.currentTimeMillis();
-                while (System.currentTimeMillis() - ms < 5000) {
-                    tOutput.setText(new Long(System.currentTimeMillis()).toString());
-                    System.out.println(tOutput.getText());
-                }
-                tOutput.setText(new Long(System.currentTimeMillis()).toString());
+                //   long ms = System.currentTimeMillis();
+                //   while (System.currentTimeMillis() - ms < 5000) {
+                //       tOutput.setText(new Long(System.currentTimeMillis()).toString());
+                //       System.out.println(tOutput.getText());
+                //   }
+                //  tOutput.setText(new Long(System.currentTimeMillis()).toString());
+            Runnable r = new WorkTime(Appl.this);
+            Thread t = new Thread(r);
+            t.start();
                 System.out.println(tOutput.getText());
                 System.out.println("buttonTime : Thread ID : " + Thread.currentThread());
             }

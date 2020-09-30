@@ -3,7 +3,7 @@ package chapter9Exepions;
 
 public class Plant {
     private Type type;
-    Color color;
+    private Color color;
     int size;
 
     public Plant(Type type, Color color, int size) {
@@ -57,6 +57,8 @@ public class Plant {
     }
 
     public static void main(String[] args) {
+        Plant p0 = new Plant(Type.Flow , Color.Blue , 7);
+        System.out.println(p0);
         try {
             Plant pl = new Plant("romashka", "blue", 5);
             System.out.println(pl);
