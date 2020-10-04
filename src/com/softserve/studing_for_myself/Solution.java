@@ -1,14 +1,54 @@
 package com.softserve.studing_for_myself;
 
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+//
 
-public  class Solution  {
-    public static void main(String[] args) {
+public  class Solution {
+    public static void m1(int sec) throws InterruptedException {
+  //      try {
+            Thread.sleep(sec* 100);
+    //    } catch (InterruptedException e) {
+            //CODE
+      //      System.out.println("ERROR");
+//            //System.exit(1000);
+        }
+
+
+
+
+    public static void main(String[] args) throws InterruptedException {
+
+
+
+
+
+
+//        Scanner sc = new Scanner(System.in);
+//        int sizeArr = sc.nextInt();
+//        int[] arr = new int[sizeArr];
+//        boolean a = false;
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = sc.nextInt();
+//            if(arr[i]>35 && arr[i] % 5 > 2.5){
+//                a= true;
+//                for (int j = 0; j < 10 & a  ; j++) {
+//                    arr[i] += 1;
+//                    if (arr[i] % 5 == 0.0){
+//                        System.out.println( arr[i]);
+//                        a = false;
+//                    }
+//                }
+//        }else System.out.println(arr[i]);
+//        }
+
+
+
 //        String  a=  "w";
 //        String  b = " abcd ";
 //        System.out.println("a.concat(b) = "+a.concat(b));
