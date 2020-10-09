@@ -9,16 +9,30 @@ enum Color {
 }
 public class Plant {
 
-    int size;
+    private int size;
     private Color color;
     private Type type;
-
-    public Plant() {}
 
     public Plant(int size, Color color, Type type) {
         this.size = size;
         this.color = color;
         this.type = type;
+    }
+    
+    public Plant(int size, String color, String type) throws ColorException, TypeException{
+    	this.size = size;
+    	
+    	try {
+    		this.color =Color.valueOf(color.toUpperCase());
+    	} catch (IllegalArgumentException e) {
+    		throw new ColorException("Invalid color");
+    	}
+    	
+    	try {
+    	this.type =Type.valueOf(type.toUpperCase());
+    	} catch (IllegalArgumentException e) {
+    		throw new TypeException("Invalid type");
+    	}
     }
 
     @Override
