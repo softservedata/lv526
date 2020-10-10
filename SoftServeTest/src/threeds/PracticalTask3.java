@@ -42,12 +42,13 @@ public class PracticalTask3 {
     public static void main(String[] args) {
         FileReader fileReader = null;
         BufferedReader bufferedReader = null;
+        List<String> arrayOFStrings = new ArrayList<>();
+        String s = null;
+        int count = 0;
         try {
             fileReader = new FileReader(fileName);
             bufferedReader = new BufferedReader(fileReader);
-            String s = null;
-            int count = 0;
-            List<String> arrayOFStrings = new ArrayList<>();
+
             System.out.println("Read our data : " + fileName);
             while ((s = bufferedReader.readLine()) != null) {
                 arrayOFStrings.add(s);
@@ -58,6 +59,7 @@ public class PracticalTask3 {
                 System.out.println(string);
             }
             counterLengthLine(arrayOFStrings);
+            System.out.println("_______________");
             counterSymbols(arrayOFStrings);
         } catch (Exception e) {
             e.printStackTrace();

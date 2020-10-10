@@ -5,14 +5,16 @@ public class HelloWorld implements Runnable {
 
     @Override
     public void run() {
-        synchronized (MassagerMaker.monitor) {
+     //   synchronized (MassagerMaker.monitor) {
             System.out.println(" ID ( HELLO WORLD ) thread is : " + Thread.currentThread().getId());
             System.out.println(hello);
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            for (int i = 0; i < 10; i++) {
+                System.out.println(hello);
+                try {
+                    Thread.sleep(1);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
-}

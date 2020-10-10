@@ -33,7 +33,7 @@ public class HW1 implements Runnable {
 
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newFixedThreadPool(3);
-
+    // need to create not with the help of pool
         for (int i = 0; i < 5; i++) {
 
             Runnable thread1 = new HW1(" THREAD " + i);

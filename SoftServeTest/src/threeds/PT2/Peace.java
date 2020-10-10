@@ -5,14 +5,15 @@ public class Peace implements Runnable {
 
     @Override
     public void run() {
-        synchronized (MassagerMaker.monitor) {
+     //   synchronized (MassagerMaker.monitor) {
             System.out.println("ID ( Peace in the peace )thread is : " + Thread.currentThread().getId());
-            System.out.println(" Peace int the peace ");
-            try {
-                Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            for (int i = 0; i < 10; i++) {
+                System.out.println(" Peace int the peace ");
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
-}
