@@ -9,8 +9,11 @@ public class BirdsProgram {
           new Chicken()
         };
 
-        for(int i = 0; i < birds.length; i++){
-            birds[i].fly();
+        for (Bird bird : birds){
+            bird.fly();
+            System.out.println(bird);
+            System.out.println("----------");
+
         }
     }
 }
