@@ -12,6 +12,7 @@ import FInal.xo.model.exeptions.InvalidePointExeption;
 import FInal.xo.model.ourModel.Field;
 import FInal.xo.model.ourModel.Figure;
 import FInal.xo.model.ourModel.Game;
+import FInal.xo.model.ourModel.Player;
 
 public class ConsoleView {
     private CurentMoveControler currentMoveControler = new CurentMoveControler();
@@ -58,13 +59,14 @@ public class ConsoleView {
     }
 
     private int askCordinate(final String cordinateName) {
-        System.out.format(" Please Input %s ", cordinateName);
+        System.out.format(" Please Input %s ", cordinateName );
+
         Scanner scanner = new Scanner(System.in);
         try {
             int num = scanner.nextInt();
             return num;
         } catch (InputMismatchException e) {
-            System.out.println("Та шо ти пишеш?");
+            System.out.println(" Invalid Point Entered ");
             return askCordinate(cordinateName);
         }
     }

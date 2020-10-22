@@ -7,7 +7,7 @@ public class Player {
 
     public Player(final String name,final Figure figure) {
         this.name = name;
-        this.figure = figure;
+        this.figure = figure;// create tests which can chack if !figure == null
     }
 
     public String getName() {

@@ -8,7 +8,8 @@ import FInal.xo.model.ourModel.Figure;
 import java.awt.*;
 
 public class MoveControler {
-    public void applyFigure(Field field, Point point, Figure figure) throws InvalidePointExeption, AlreadyOccupatedException {
+    public void applyFigure(Field field, Point point, Figure figure) throws InvalidePointExeption,
+                                                                            AlreadyOccupatedException {
         if (field.getFigure(point) != null) {
             throw new AlreadyOccupatedException();
         }

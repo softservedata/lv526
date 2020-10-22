@@ -1,5 +1,6 @@
 package FInal.xo.model.ourModel;
 
+import FInal.xo.model.exeptions.AlreadyOccupatedException;
 import FInal.xo.model.exeptions.InvalidePointExeption;
 
 import java.awt.*;
@@ -25,7 +26,7 @@ public class Field {
         return field[point.x][point.y];
     }
 
-    public void setFigure(final Point point, final Figure figure) throws InvalidePointExeption {
+    public void setFigure(final Point point, final Figure figure) throws InvalidePointExeption , AlreadyOccupatedException {
         if (!checkPoint(point)) // якщо наш чекпоінт не валідний від нашого поінта тоді.
         {
             throw new InvalidePointExeption();

@@ -50,6 +50,7 @@ public class WinnerControler {
     }
 
     private interface IPOintGenerator {
+        //сюди передаємо поінт а повертатиме наступний
         Point next(Point point);
     }
 
